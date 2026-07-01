@@ -5,14 +5,17 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Saemen Fest 2026 - Ticket</title>
+<title>Saemen Fest 2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 
@@ -23,18 +26,30 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-background:#f4f6fb;
+
+background:#eef2f7;
+
 color:#222;
+
 }
 
 .container{
-width:100%;
+
 max-width:900px;
+
 margin:auto;
+
 background:#fff;
+
 min-height:100vh;
+
 padding-bottom:120px;
+
 }
 
 /* ================= NAVBAR ================= */
@@ -45,21 +60,21 @@ position:sticky;
 
 top:0;
 
-z-index:999;
+z-index:9999;
 
 height:74px;
 
-background:#17349f;
+padding:0 18px;
 
 display:flex;
 
-align-items:center;
-
 justify-content:space-between;
 
-padding:0 18px;
+align-items:center;
 
-box-shadow:0 8px 20px rgba(0,0,0,.15);
+background:#1d46b8;
+
+box-shadow:0 8px 30px rgba(0,0,0,.12);
 
 }
 
@@ -69,7 +84,7 @@ display:flex;
 
 align-items:center;
 
-gap:10px;
+gap:12px;
 
 }
 
@@ -83,9 +98,9 @@ height:42px;
 
 font-size:24px;
 
-color:#fff;
-
 font-weight:700;
+
+color:#fff;
 
 }
 
@@ -93,63 +108,67 @@ font-weight:700;
 
 display:flex;
 
-gap:12px;
-
 align-items:center;
+
+gap:12px;
 
 }
 
 .lang{
 
-background:#2b57e8;
+background:#315df3;
+
+padding:10px 16px;
+
+border-radius:30px;
 
 color:#fff;
 
-padding:10px 15px;
-
-border-radius:25px;
+font-weight:600;
 
 font-size:14px;
 
-font-weight:600;
-
 }
 
-.icon-btn{
+.circle-btn{
 
 width:46px;
 
 height:46px;
 
-background:#2b57e8;
-
 border-radius:50%;
+
+background:#315df3;
 
 display:flex;
 
-align-items:center;
-
 justify-content:center;
+
+align-items:center;
 
 color:#fff;
 
-font-size:18px;
-
 cursor:pointer;
 
-transition:.25s;
+transition:.3s;
 
 }
 
-.icon-btn:hover{
+.circle-btn:hover{
 
 transform:translateY(-2px);
 
 }
 
-/* ================= BANNER ================= */
+/* ================= HERO ================= */
 
-.banner img{
+.hero{
+
+position:relative;
+
+}
+
+.hero img{
 
 width:100%;
 
@@ -157,47 +176,93 @@ display:block;
 
 }
 
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+right:0;
+
+bottom:0;
+
+height:80px;
+
+background:linear-gradient(transparent,#fff);
+
+}
+
 /* ================= TITLE ================= */
 
-.page-title{
+.page-header{
 
 padding:25px;
 
 }
 
-.page-title h1{
+.category{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:8px;
+
+background:#edf3ff;
+
+color:#2854eb;
+
+padding:10px 16px;
+
+border-radius:14px;
+
+font-size:14px;
+
+font-weight:700;
+
+margin-bottom:18px;
+
+}
+
+.page-header h1{
 
 font-size:36px;
 
+line-height:1.3;
+
 font-weight:800;
 
-line-height:1.3;
+margin-bottom:10px;
 
 }
 
-.page-title p{
-
-margin-top:8px;
-
-color:#666;
+.page-header p{
 
 font-size:15px;
 
+color:#666;
+
+line-height:1.8;
+
 }
 
-/* ================= SECTION ================= */
+/* ================= TITLE SECTION ================= */
 
 .section-title{
+
+padding:0 25px;
+
+margin-top:15px;
+
+margin-bottom:20px;
 
 display:flex;
 
 align-items:center;
 
-gap:10px;
-
-padding:0 25px;
-
-margin-bottom:20px;
+gap:12px;
 
 font-size:30px;
 
@@ -215,17 +280,27 @@ color:#2b57e8;
 
 .ticket-card{
 
-margin:20px;
+margin:22px;
 
 background:#fff;
 
-border-radius:24px;
-
-border:1px solid #e8e8e8;
+border-radius:28px;
 
 padding:28px;
 
-box-shadow:0 8px 24px rgba(0,0,0,.05);
+border:1px solid #ececec;
+
+box-shadow:0 12px 35px rgba(0,0,0,.07);
+
+transition:.35s;
+
+}
+
+.ticket-card:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 18px 45px rgba(0,0,0,.12);
 
 }
 
@@ -245,7 +320,7 @@ margin-bottom:20px;
 
 .ticket-title{
 
-font-size:30px;
+font-size:29px;
 
 font-weight:700;
 
@@ -255,43 +330,21 @@ line-height:1.4;
 
 .sale{
 
-background:#edf3ff;
+background:#eaf1ff;
 
 color:#2b57e8;
 
-padding:8px 16px;
+padding:8px 15px;
 
 border-radius:12px;
 
-font-size:15px;
+font-size:14px;
 
 font-weight:700;
 
 }
 
-.ticket-content{
-
-line-height:2;
-
-font-size:16px;
-
-color:#555;
-
-}
-
-.ticket-content ul{
-
-padding-left:28px;
-
-}
-
-.ticket-content li{
-
-margin-bottom:10px;
-
-}
-
-.label{
+.badge{
 
 display:inline-flex;
 
@@ -303,7 +356,7 @@ background:#edf3ff;
 
 color:#2b57e8;
 
-padding:8px 14px;
+padding:8px 16px;
 
 border-radius:12px;
 
@@ -315,123 +368,25 @@ margin-bottom:18px;
 
 }
 
-.ticket-footer{
+.ticket-content{
 
-display:flex;
+font-size:16px;
 
-justify-content:space-between;
+line-height:2;
 
-align-items:center;
-
-margin-top:30px;
-
-padding-top:24px;
-
-border-top:2px dashed #ececec;
-
-flex-wrap:wrap;
-
-gap:20px;
+color:#555;
 
 }
 
-.price{
+.ticket-content ul{
 
-font-size:48px;
-
-font-weight:800;
+padding-left:26px;
 
 }
 
-.old-price{
+.ticket-content li{
 
-font-size:18px;
-
-text-decoration:line-through;
-
-color:#999;
-
-margin-top:6px;
-
-}
-
-.discount{
-
-display:inline-block;
-
-margin-top:12px;
-
-background:#16a34a;
-
-color:#fff;
-
-padding:8px 16px;
-
-border-radius:10px;
-
-font-weight:700;
-
-}
-
-.choose-btn{
-
-display:inline-block;
-
-background:#2b57e8;
-
-color:#fff;
-
-padding:18px 34px;
-
-text-decoration:none;
-
-border-radius:18px;
-
-font-size:18px;
-
-font-weight:700;
-
-transition:.25s;
-
-}
-
-.choose-btn:hover{
-
-transform:translateY(-2px);
-
-box-shadow:0 10px 30px rgba(43,87,232,.3);
-
-}
-
-/* ================= MOBILE ================= */
-
-@media(max-width:768px){
-
-.page-title h1{
-
-font-size:28px;
-
-}
-
-.ticket-title{
-
-font-size:22px;
-
-}
-
-.price{
-
-font-size:32px;
-
-}
-
-.ticket-footer{
-
-flex-direction:column;
-
-align-items:flex-start;
-
-}
+margin-bottom:10px;
 
 }
 
@@ -457,13 +412,13 @@ align-items:flex-start;
 
 <div class="lang">🇮🇩 ID</div>
 
-<div class="icon-btn">
+<div class="circle-btn">
 
 <i class="fa-solid fa-magnifying-glass"></i>
 
 </div>
 
-<div class="icon-btn">
+<div class="circle-btn">
 
 <i class="fa-solid fa-bars"></i>
 
@@ -473,18 +428,32 @@ align-items:flex-start;
 
 </nav>
 
-<div class="banner">
+<div class="hero">
 
-<img src="banner-saement.png" alt="Banner">
+<img src="banner-saement.png">
 
 </div>
 
-<div class="page-title">
+<div class="page-header">
 
-<h1>Saemen Fest 2026</h1>
+<div class="category">
+
+<i class="fa-solid fa-music"></i>
+
+Festival Musik
+
+</div>
+
+<h1>
+
+Saemen Fest 2026
+
+</h1>
 
 <p>
-Pilih kategori tiket yang tersedia di bawah ini.
+
+Pilih kategori tiket dan merchandise resmi yang tersedia.
+
 </p>
 
 </div>
@@ -493,34 +462,43 @@ Pilih kategori tiket yang tersedia di bawah ini.
 
 <i class="fa-solid fa-ticket"></i>
 
-<span>Kategori Tiket</span>
+Kategori Tiket
 
 </div>
 <!-- ===================================================== -->
-<!-- TIKET 1 : REGULAR - FESTIVAL SAE BERDUA (BUNDLE) -->
+<!-- KATEGORI 1 : FESTIVAL SAE BERDUA (BUNDLE) -->
 <!-- ===================================================== -->
 
 <div class="ticket-card">
 
     <div class="ticket-header">
 
-        <div class="ticket-title">
-            Regular : Festival Sae Berdua
-            <br>
-            (Limited Stock)
+        <div>
+
+            <div class="badge"
+                 style="background:#FFF6D8;color:#C98B00;">
+
+                <i class="fa-solid fa-gift"></i>
+
+                Bundle
+
+            </div>
+
+            <div class="ticket-title">
+
+                Regular : Festival Sae Berdua
+                <br>
+                (Limited Stock)
+
+            </div>
+
         </div>
 
         <div class="sale">
+
             On Sale
+
         </div>
-
-    </div>
-
-    <div class="label">
-
-        <i class="fa-solid fa-gift"></i>
-
-        Bundle
 
     </div>
 
@@ -532,11 +510,11 @@ Pilih kategori tiket yang tersedia di bawah ini.
 
             <li>Seluruh kategori merupakan <strong>Festival Standing</strong>.</li>
 
+            <li>Minimal usia pengunjung <strong>12 Tahun</strong>.</li>
+
             <li>Ibu hamil tidak disarankan memasuki area venue.</li>
 
-            <li>Minimal usia pengunjung adalah <strong>12 Tahun</strong>.</li>
-
-            <li>Tiket yang telah dibeli tidak dapat dipindahtangankan.</li>
+            <li>Tiket tidak dapat dipindahtangankan.</li>
 
             <li>Promotor tidak bertanggung jawab atas pembelian tiket di luar partner resmi.</li>
 
@@ -544,25 +522,65 @@ Pilih kategori tiket yang tersedia di bawah ini.
 
     </div>
 
-    <div class="ticket-footer">
+    <hr style="margin:25px 0;border:none;border-top:1px dashed #ddd;">
+
+    <div style="
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:20px;
+    ">
 
         <div>
 
-            <div class="price">
+            <div style="
+                font-size:48px;
+                font-weight:800;
+                color:#111;
+            ">
                 Rp184.500
             </div>
 
-            <div class="old-price">
+            <div style="
+                text-decoration:line-through;
+                color:#999;
+                font-size:18px;
+                margin-top:6px;
+            ">
                 Rp199.000
             </div>
 
-            <div class="discount">
+            <div style="
+                display:inline-block;
+                margin-top:15px;
+                background:#18A957;
+                color:#fff;
+                padding:8px 16px;
+                border-radius:10px;
+                font-weight:700;
+                font-size:14px;
+            ">
                 Hemat 7%
             </div>
 
         </div>
 
-        <a href="form.html" class="choose-btn">
+        <a href="form.html"
+
+           style="
+           display:inline-flex;
+           align-items:center;
+           gap:10px;
+           background:#2B57E8;
+           color:#fff;
+           text-decoration:none;
+           padding:18px 30px;
+           border-radius:18px;
+           font-weight:700;
+           font-size:18px;
+           transition:.3s;
+           ">
 
             <i class="fa-solid fa-ticket"></i>
 
@@ -573,31 +591,40 @@ Pilih kategori tiket yang tersedia di bawah ini.
     </div>
 
 </div>
-<!-- ===================================================== -->
-<!-- TIKET 2 : REGULAR FESTIVAL -->
+
+   <!-- ===================================================== -->
+<!-- KATEGORI 2 : REGULAR FESTIVAL -->
 <!-- ===================================================== -->
 
 <div class="ticket-card">
 
     <div class="ticket-header">
 
-        <div class="ticket-title">
-            Regular : Festival
-            <br>
-            (Limited Stock)
+        <div>
+
+            <div class="badge">
+
+                <i class="fa-solid fa-ticket"></i>
+
+                Festival Pass
+
+            </div>
+
+            <div class="ticket-title">
+
+                Regular : Festival
+                <br>
+                (Limited Stock)
+
+            </div>
+
         </div>
 
         <div class="sale">
+
             On Sale
+
         </div>
-
-    </div>
-
-    <div class="label">
-
-        <i class="fa-solid fa-ticket"></i>
-
-        Festival
 
     </div>
 
@@ -607,37 +634,71 @@ Pilih kategori tiket yang tersedia di bawah ini.
 
             <li>Maksimal pembelian <strong>5 tiket</strong> dalam satu transaksi.</li>
 
-            <li>Seluruh kategori merupakan <strong>Festival Standing</strong>.</li>
+            <li>Seluruh area merupakan <strong>Festival Standing</strong>.</li>
 
-            <li>Minimal usia pengunjung adalah <strong>12 Tahun</strong>.</li>
+            <li>Minimal usia pengunjung <strong>12 Tahun</strong>.</li>
 
-            <li>Ibu hamil tidak disarankan memasuki area venue demi alasan keamanan.</li>
+            <li>Ibu hamil tidak disarankan memasuki area venue.</li>
 
             <li>Tiket yang telah dibeli tidak dapat dibatalkan maupun dipindahtangankan.</li>
 
-            <li>Promotor tidak bertanggung jawab atas pembelian tiket di luar partner resmi.</li>
+            <li>Dilarang membawa senjata tajam, narkoba, minuman keras, dan benda berbahaya lainnya.</li>
 
-            <li>Seluruh pengunjung wajib menaati seluruh peraturan penyelenggara selama acara berlangsung.</li>
+            <li>Promotor berhak menolak pengunjung yang melanggar peraturan acara.</li>
 
         </ul>
 
     </div>
 
-    <div class="ticket-footer">
+    <hr style="
+        margin:25px 0;
+        border:none;
+        border-top:1px dashed #ddd;
+    ">
+
+    <div style="
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:20px;
+    ">
 
         <div>
 
-            <div class="price">
+            <div style="
+                font-size:48px;
+                font-weight:800;
+                color:#111;
+            ">
                 Rp199.000
             </div>
 
-            <div style="margin-top:10px;color:#666;font-size:15px;">
-                Tiket Festival Reguler
+            <div style="
+                color:#777;
+                margin-top:10px;
+                font-size:15px;
+            ">
+                Festival Regular Pass
             </div>
 
         </div>
 
-        <a href="form.html" class="choose-btn">
+        <a href="form.html"
+
+           style="
+           display:inline-flex;
+           align-items:center;
+           gap:10px;
+           background:#2B57E8;
+           color:#fff;
+           text-decoration:none;
+           padding:18px 30px;
+           border-radius:18px;
+           font-weight:700;
+           font-size:18px;
+           transition:.3s;
+           ">
 
             <i class="fa-solid fa-ticket"></i>
 
@@ -648,61 +709,65 @@ Pilih kategori tiket yang tersedia di bawah ini.
     </div>
 
 </div>
-<!-- ===================================================== -->
-<!-- MERCHANDISE BLACK -->
+
+   <!-- ===================================================== -->
+<!-- KATEGORI 3 : OFFICIAL MERCHANDISE BLACK -->
 <!-- ===================================================== -->
 
 <div class="ticket-card">
 
     <div class="ticket-header">
 
-        <div class="ticket-title">
-            Merchandise Only
-            <br>
-            Official Merchandise
-            <br>
-            Saemen Fest X Sirin Farid Stevy
-            <br>
-            Black Edition
+        <div>
+
+            <div class="badge" style="background:#EEF7FF;color:#2563EB;">
+
+                <i class="fa-solid fa-shirt"></i>
+
+                Merchandise
+
+            </div>
+
+            <div class="ticket-title">
+
+                Official Merchandise
+                <br>
+
+                Saemen Fest ×
+                <br>
+
+                Sirin Farid Stevy
+                <br>
+
+                Black Edition
+
+            </div>
+
         </div>
 
         <div class="sale">
+
             On Sale
+
         </div>
-
-    </div>
-
-    <div class="label">
-
-        <i class="fa-solid fa-shirt"></i>
-
-        Merchandise
 
     </div>
 
     <div class="ticket-content">
 
-        <p>
-            Official Merchandise Saemen Fest 2026 hasil kolaborasi
-            bersama Sirin Farid Stevy.
-        </p>
-
-        <br>
-
         <ul>
 
             <li>Harga merchandise belum termasuk tiket festival.</li>
 
-            <li>Pengambilan merchandise tanggal
-                <strong>18–19 Juli 2026.</strong>
-            </li>
+            <li>Pengambilan merchandise tanggal <strong>18–19 Juli 2026</strong>.</li>
 
-            <li>Merchandise dapat dikirim melalui ekspedisi
-                (ongkir ditanggung pembeli).</li>
+            <li>Merchandise dapat dikirim ke seluruh Indonesia.</li>
+
+            <li>Biaya pengiriman ditanggung pembeli.</li>
 
             <li>Pengiriman dilakukan setelah masa Pre Order selesai.</li>
 
-            <li>Pastikan ukuran yang dipilih sudah benar sebelum checkout.</li>
+            <li>Pastikan ukuran yang dipilih sudah benar.</li>
 
         </ul>
 
@@ -712,34 +777,40 @@ Pilih kategori tiket yang tersedia di bawah ini.
 
         <br><br>
 
-        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+        <div style="display:flex;flex-wrap:wrap;gap:12px;">
 
-            <div class="label">S (47×66)</div>
+            <button class="size-btn">S</button>
 
-            <div class="label">M (50×69)</div>
+            <button class="size-btn">M</button>
 
-            <div class="label">L (53×72)</div>
+            <button class="size-btn">L</button>
 
-            <div class="label">XL (56×74)</div>
+            <button class="size-btn">XL</button>
 
-            <div class="label">XXL (59×76)</div>
+            <button class="size-btn">XXL</button>
 
-            <div class="label">XXXL (62×78)</div>
+            <button class="size-btn">XXXL</button>
 
         </div>
 
     </div>
 
-    <div class="ticket-footer">
+    <hr style="margin:28px 0;border:none;border-top:1px dashed #ddd;">
+
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
 
         <div>
 
-            <div class="price">
+            <div style="font-size:48px;font-weight:800;">
+
                 Rp175.000
+
             </div>
 
-            <div style="margin-top:10px;color:#666;">
-                Official Merchandise
+            <div style="color:#777;margin-top:8px;">
+
+                Official Merchandise Black
+
             </div>
 
         </div>
@@ -756,62 +827,97 @@ Pilih kategori tiket yang tersedia di bawah ini.
 
 </div>
 
- <!-- ===================================================== -->
-<!-- MERCHANDISE WHITE -->
+<style>
+
+.size-btn{
+
+padding:12px 20px;
+
+border:2px solid #D8E2FF;
+
+background:#fff;
+
+border-radius:14px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.25s;
+
+font-size:15px;
+
+}
+
+.size-btn:hover{
+
+background:#2B57E8;
+
+color:#fff;
+
+border-color:#2B57E8;
+
+}
+
+</style> 
+    <!-- ===================================================== -->
+<!-- KATEGORI 4 : OFFICIAL MERCHANDISE WHITE -->
 <!-- ===================================================== -->
 
 <div class="ticket-card">
 
     <div class="ticket-header">
 
-        <div class="ticket-title">
-            Merchandise Only
-            <br>
-            Official Merchandise
-            <br>
-            Saemen Fest X Sirin Farid Stevy
-            <br>
-            White Edition
+        <div>
+
+            <div class="badge" style="background:#EEF7FF;color:#2563EB;">
+
+                <i class="fa-solid fa-shirt"></i>
+
+                Merchandise
+
+            </div>
+
+            <div class="ticket-title">
+
+                Official Merchandise
+                <br>
+
+                Saemen Fest ×
+                <br>
+
+                Sirin Farid Stevy
+                <br>
+
+                White Edition
+
+            </div>
+
         </div>
 
         <div class="sale">
+
             On Sale
+
         </div>
-
-    </div>
-
-    <div class="label">
-
-        <i class="fa-solid fa-shirt"></i>
-
-        Merchandise
 
     </div>
 
     <div class="ticket-content">
 
-        <p>
-            Official Merchandise Saemen Fest 2026 hasil kolaborasi
-            bersama Sirin Farid Stevy.
-        </p>
-
-        <br>
-
         <ul>
 
             <li>Harga merchandise belum termasuk tiket festival.</li>
 
-            <li>Pengambilan merchandise tanggal
-                <strong>18–19 Juli 2026</strong>.
-            </li>
+            <li>Pengambilan merchandise tanggal <strong>18–19 Juli 2026</strong>.</li>
 
             <li>Dapat dikirim ke seluruh Indonesia melalui ekspedisi.</li>
 
-            <li>Ongkos kirim ditanggung pembeli.</li>
+            <li>Biaya pengiriman ditanggung pembeli.</li>
 
             <li>Pengiriman dilakukan setelah masa Pre Order selesai.</li>
 
-            <li>Pastikan ukuran sudah benar sebelum checkout.</li>
+            <li>Pastikan ukuran sudah sesuai sebelum checkout.</li>
 
         </ul>
 
@@ -821,34 +927,40 @@ Pilih kategori tiket yang tersedia di bawah ini.
 
         <br><br>
 
-        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+        <div class="size-group">
 
-            <div class="label">S (47×66)</div>
+            <button class="size-btn">S</button>
 
-            <div class="label">M (50×69)</div>
+            <button class="size-btn">M</button>
 
-            <div class="label">L (53×72)</div>
+            <button class="size-btn">L</button>
 
-            <div class="label">XL (56×74)</div>
+            <button class="size-btn">XL</button>
 
-            <div class="label">XXL (59×76)</div>
+            <button class="size-btn">XXL</button>
 
-            <div class="label">XXXL (62×78)</div>
+            <button class="size-btn">XXXL</button>
 
         </div>
 
     </div>
+
+    <hr style="margin:28px 0;border:none;border-top:1px dashed #ddd;">
 
     <div class="ticket-footer">
 
         <div>
 
             <div class="price">
+
                 Rp175.000
+
             </div>
 
-            <div style="margin-top:10px;color:#666;">
+            <div style="color:#777;margin-top:8px;">
+
                 Official Merchandise White
+
             </div>
 
         </div>
@@ -865,90 +977,85 @@ Pilih kategori tiket yang tersedia di bawah ini.
 
 </div>
 
- <!-- ===================================================== -->
-<!-- STICKY BOTTOM -->
-<!-- ===================================================== -->
+<style>
 
-<div class="bottom-buy">
+.size-group{
 
-    <div class="bottom-flex">
+display:flex;
 
-        <div class="bottom-price">
+flex-wrap:wrap;
 
-            <div style="font-size:15px;color:#666;">
-                Harga Mulai dari
-            </div>
+gap:12px;
 
-            <div style="font-size:32px;font-weight:800;">
-                Rp175.000
-            </div>
+margin-top:5px;
 
-        </div>
+}
 
-        <a href="form.html" class="choose-btn">
+.size-btn{
 
-            <i class="fa-solid fa-ticket"></i>
+width:72px;
 
-            Beli Sekarang
+height:46px;
 
-        </a>
+border:2px solid #dce5ff;
 
-    </div>
+background:#fff;
 
-</div>
+border-radius:14px;
 
-<!-- ===================================================== -->
-<!-- FOOTER -->
-<!-- ===================================================== -->
+font-weight:700;
 
-<footer style="background:#17349f;color:#fff;padding:45px 25px;margin-top:60px;">
+font-size:15px;
 
-    <img src="logo-saement.png"
-         style="height:55px;margin-bottom:25px;">
+cursor:pointer;
 
-    <h2 style="margin-bottom:20px;">
-        Artatix
-    </h2>
+transition:.25s;
 
-    <div style="line-height:2;">
+}
 
-        <strong>WhatsApp</strong><br>
+.size-btn:hover{
 
-        +62 821-3767-6220
+background:#2B57E8;
 
-        <br><br>
+border-color:#2B57E8;
 
-        <strong>Email</strong><br>
+color:#fff;
 
-        cs@artatix.co.id
+transform:translateY(-2px);
 
-    </div>
+}
 
-    <hr style="margin:30px 0;border:none;border-top:1px solid rgba(255,255,255,.25);">
+.size-btn.active{
 
-    <center>
+background:#2B57E8;
 
-        © 2026 Artatix. Hak Cipta Dilindungi.
+border-color:#2B57E8;
 
-    </center>
+color:#fff;
 
-</footer>
+}
 
-</div>
+</style>
 
 <script>
 
-document.querySelectorAll(".choose-btn").forEach(function(btn){
+document.querySelectorAll(".size-btn").forEach(function(btn){
 
-    btn.addEventListener("click",function(){
+btn.onclick=function(){
 
-        this.style.opacity=".85";
+let group=this.parentElement;
 
-    });
+group.querySelectorAll(".size-btn").forEach(function(b){
+
+b.classList.remove("active");
+
+});
+
+this.classList.add("active");
+
+};
 
 });
 
 </script>
-
-</body>
-</html>
+    
