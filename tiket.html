@@ -1166,10 +1166,52 @@ buyBtn.addEventListener("click",()=>{
 
     if(!buyBtn.classList.contains("enabled")) return;
 
-    window.location.href = "form.html";
+    const items=[];
+
+    let total=0;
+    let jumlah=0;
+
+    cards.forEach(card=>{
+
+        const counter=card.querySelector(".counter");
+
+        if(counter.style.display!=="flex") return;
+
+        const qty=parseInt(counter.querySelector("span").textContent);
+
+        const harga=parseInt(card.dataset.price);
+
+        const nama=card.querySelector(".ticket-name").innerText.trim();
+
+        items.push({
+            nama:nama,
+            qty:qty,
+            harga:harga
+        });
+
+        total+=qty*harga;
+        jumlah+=qty;
+
+    });
+
+    localStorage.setItem(
+        "checkout_items",
+        JSON.stringify(items)
+    );
+
+    localStorage.setItem(
+        "totalPembayaran",
+        total
+    );
+
+    localStorage.setItem(
+        "jumlahTiket",
+        jumlah
+    );
+
+    window.location.href="form.html";
 
 });
-
 updateTotal();
 
 </script>
