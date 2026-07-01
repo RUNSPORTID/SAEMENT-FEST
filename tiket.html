@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Saemen Fest 2026 - Kategori Tiket</title>
+<title>Saemen Fest 2026 - Ticket</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 
@@ -16,15 +20,16 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#f5f7fb;
-color:#1d1d1f;
+background:#f4f6fb;
+color:#222;
 }
 
 .container{
+width:100%;
 max-width:900px;
 margin:auto;
 background:#fff;
@@ -35,116 +40,192 @@ padding-bottom:120px;
 /* ================= NAVBAR ================= */
 
 .navbar{
+
 position:sticky;
+
 top:0;
+
 z-index:999;
-height:72px;
+
+height:74px;
+
 background:#17349f;
+
 display:flex;
-justify-content:space-between;
+
 align-items:center;
+
+justify-content:space-between;
+
 padding:0 18px;
-box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
 }
 
 .logo{
+
 display:flex;
+
 align-items:center;
+
 gap:10px;
+
 }
 
 .logo img{
+
 height:42px;
+
 }
 
-.logo span{
+.logo h2{
+
 font-size:24px;
-font-weight:700;
+
 color:#fff;
+
+font-weight:700;
+
 }
 
 .nav-right{
+
 display:flex;
-align-items:center;
+
 gap:12px;
+
+align-items:center;
+
 }
 
 .lang{
-background:#2b56e5;
+
+background:#2b57e8;
+
 color:#fff;
-padding:9px 15px;
-border-radius:30px;
+
+padding:10px 15px;
+
+border-radius:25px;
+
 font-size:14px;
+
 font-weight:600;
+
 }
 
 .icon-btn{
+
 width:46px;
+
 height:46px;
-background:#2b56e5;
+
+background:#2b57e8;
+
 border-radius:50%;
+
 display:flex;
-justify-content:center;
+
 align-items:center;
+
+justify-content:center;
+
 color:#fff;
+
 font-size:18px;
+
 cursor:pointer;
+
+transition:.25s;
+
+}
+
+.icon-btn:hover{
+
+transform:translateY(-2px);
+
 }
 
 /* ================= BANNER ================= */
 
 .banner img{
+
 width:100%;
+
 display:block;
+
 }
 
 /* ================= TITLE ================= */
 
 .page-title{
-padding:25px 22px 10px;
+
+padding:25px;
+
 }
 
 .page-title h1{
-font-size:34px;
+
+font-size:36px;
+
 font-weight:800;
+
+line-height:1.3;
+
 }
 
 .page-title p{
-margin-top:6px;
-font-size:15px;
+
+margin-top:8px;
+
 color:#666;
+
+font-size:15px;
+
 }
 
 /* ================= SECTION ================= */
 
 .section-title{
+
 display:flex;
+
 align-items:center;
-gap:12px;
+
+gap:10px;
+
+padding:0 25px;
+
+margin-bottom:20px;
+
 font-size:30px;
+
 font-weight:700;
-padding:20px;
+
 }
 
 .section-title i{
-color:#3965f3;
+
+color:#2b57e8;
+
 }
 
 /* ================= CARD ================= */
 
 .ticket-card{
 
-background:#fff;
+margin:20px;
 
-border:1px solid #e8e8e8;
+background:#fff;
 
 border-radius:24px;
 
-margin:20px;
+border:1px solid #e8e8e8;
 
 padding:28px;
 
-box-shadow:0 6px 18px rgba(0,0,0,.05);
+box-shadow:0 8px 24px rgba(0,0,0,.05);
 
 }
 
@@ -156,7 +237,7 @@ justify-content:space-between;
 
 align-items:flex-start;
 
-gap:15px;
+gap:20px;
 
 margin-bottom:20px;
 
@@ -164,7 +245,7 @@ margin-bottom:20px;
 
 .ticket-title{
 
-font-size:31px;
+font-size:30px;
 
 font-weight:700;
 
@@ -174,29 +255,27 @@ line-height:1.4;
 
 .sale{
 
-background:#eaf0ff;
+background:#edf3ff;
 
-color:#3765f3;
+color:#2b57e8;
 
-padding:8px 15px;
+padding:8px 16px;
 
-border-radius:10px;
-
-font-weight:600;
+border-radius:12px;
 
 font-size:15px;
 
-white-space:nowrap;
+font-weight:700;
 
 }
 
 .ticket-content{
 
-font-size:16px;
-
 line-height:2;
 
-color:#444;
+font-size:16px;
+
+color:#555;
 
 }
 
@@ -208,17 +287,35 @@ padding-left:28px;
 
 .ticket-content li{
 
-margin-bottom:12px;
+margin-bottom:10px;
+
+}
+
+.label{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:8px;
+
+background:#edf3ff;
+
+color:#2b57e8;
+
+padding:8px 14px;
+
+border-radius:12px;
+
+font-size:14px;
+
+font-weight:700;
+
+margin-bottom:18px;
 
 }
 
 .ticket-footer{
-
-margin-top:28px;
-
-padding-top:24px;
-
-border-top:2px dashed #ececec;
 
 display:flex;
 
@@ -226,23 +323,21 @@ justify-content:space-between;
 
 align-items:center;
 
+margin-top:30px;
+
+padding-top:24px;
+
+border-top:2px dashed #ececec;
+
 flex-wrap:wrap;
 
-gap:15px;
-
-}
-
-.price-area{
-
-display:flex;
-
-flex-direction:column;
+gap:20px;
 
 }
 
 .price{
 
-font-size:52px;
+font-size:48px;
 
 font-weight:800;
 
@@ -256,63 +351,45 @@ text-decoration:line-through;
 
 color:#999;
 
+margin-top:6px;
+
 }
 
 .discount{
 
 display:inline-block;
 
-margin-top:10px;
+margin-top:12px;
 
-background:#0ea34a;
+background:#16a34a;
 
 color:#fff;
 
 padding:8px 16px;
 
-border-radius:12px;
+border-radius:10px;
 
 font-weight:700;
-
-}
-
-.label{
-
-display:inline-flex;
-
-align-items:center;
-
-gap:8px;
-
-background:#eef3ff;
-
-color:#3564f1;
-
-padding:8px 15px;
-
-border-radius:12px;
-
-font-weight:600;
-
-margin-bottom:18px;
 
 }
 
 .choose-btn{
 
-background:#3765f3;
+display:inline-block;
+
+background:#2b57e8;
 
 color:#fff;
 
-text-decoration:none;
-
 padding:18px 34px;
+
+text-decoration:none;
 
 border-radius:18px;
 
-font-weight:700;
+font-size:18px;
 
-font-size:19px;
+font-weight:700;
 
 transition:.25s;
 
@@ -322,85 +399,19 @@ transition:.25s;
 
 transform:translateY(-2px);
 
-box-shadow:0 10px 25px rgba(55,101,243,.35);
+box-shadow:0 10px 30px rgba(43,87,232,.3);
 
 }
 
-/* ================= STICKY BUY ================= */
-
-.bottom-buy{
-
-position:fixed;
-
-left:0;
-
-right:0;
-
-bottom:0;
-
-background:#fff;
-
-padding:16px;
-
-box-shadow:0 -10px 30px rgba(0,0,0,.12);
-
-z-index:999;
-
-}
-
-.bottom-flex{
-
-max-width:900px;
-
-margin:auto;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-gap:15px;
-
-}
-
-.bottom-price h4{
-
-font-size:18px;
-
-font-weight:500;
-
-}
-
-.bottom-price h2{
-
-font-size:34px;
-
-font-weight:800;
-
-}
-
-.buy-now{
-
-display:block;
-
-background:#3765f3;
-
-color:#fff;
-
-text-decoration:none;
-
-padding:18px 35px;
-
-border-radius:18px;
-
-font-weight:700;
-
-font-size:19px;
-
-}
+/* ================= MOBILE ================= */
 
 @media(max-width:768px){
+
+.page-title h1{
+
+font-size:28px;
+
+}
 
 .ticket-title{
 
@@ -410,7 +421,7 @@ font-size:22px;
 
 .price{
 
-font-size:28px;
+font-size:32px;
 
 }
 
@@ -422,23 +433,10 @@ align-items:flex-start;
 
 }
 
-.bottom-flex{
-
-flex-direction:column;
-
-}
-
-.buy-now{
-
-width:100%;
-
-text-align:center;
-
-}
-
 }
 
 </style>
+
 </head>
 
 <body>
@@ -451,7 +449,7 @@ text-align:center;
 
 <img src="logo-saement.png">
 
-<span>Saemen Fest</span>
+<h2>Saemen Fest</h2>
 
 </div>
 
@@ -459,9 +457,17 @@ text-align:center;
 
 <div class="lang">🇮🇩 ID</div>
 
-<div class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+<div class="icon-btn">
 
-<div class="icon-btn"><i class="fa-solid fa-bars"></i></div>
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+<div class="icon-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
 
 </div>
 
@@ -469,7 +475,7 @@ text-align:center;
 
 <div class="banner">
 
-<img src="banner-saement.png">
+<img src="banner-saement.png" alt="Banner">
 
 </div>
 
@@ -477,7 +483,9 @@ text-align:center;
 
 <h1>Saemen Fest 2026</h1>
 
-<p>Pilih kategori tiket yang tersedia.</p>
+<p>
+Pilih kategori tiket yang tersedia di bawah ini.
+</p>
 
 </div>
 
@@ -488,88 +496,17 @@ text-align:center;
 <span>Kategori Tiket</span>
 
 </div>
- <!-- =========================
-REGULAR : FESTIVAL SAE BERDUA
-========================== -->
-
-<div class="ticket-card">
-
-<div class="ticket-header">
-
-<div class="ticket-title">
-Regular : Festival Sae Berdua<br>
-(Limited Stock)
-</div>
-
-<div class="sale">On Sale</div>
-
-</div>
-
-<div class="ticket-content">
-
-<ul>
-
-<li>Minimal pembelian <strong>2 tiket</strong> dalam 1 kali transaksi.</li>
-
-<li>Tiket di semua kategori merupakan <strong>tiket berdiri</strong>.</li>
-
-<li><strong>Ibu hamil tidak disarankan</strong> memasuki area venue Saemen Fest 2026.</li>
-
-<li>Minimal <strong>usia 12 tahun</strong> untuk memasuki area venue.</li>
-
-<li>Tiket tidak dapat dipindahtangankan dengan alasan apa pun.</li>
-
-<li>Promotor tidak bertanggung jawab atas pembelian tiket di luar partner resmi.</li>
-
-</ul>
-
-</div>
-
-<div class="ticket-footer">
-
-<div>
-
-<div class="label">
-<i class="fa-solid fa-gift"></i>
-Bundle
-</div>
-
-<div class="price-area">
-
-<div class="price">
-Rp184.500
-</div>
-
-<div class="old-price">
-Rp199.000
-</div>
-
-<div class="discount">
-<i class="fa-solid fa-tags"></i>
-Hemat 7%
-</div>
-
-</div>
-
-</div>
-
-<a href="form.html" class="choose-btn">
-Pilih Tiket
-</a>
-
-</div>
-
-</div>
-<!-- ==========================================
-REGULAR : FESTIVAL (LIMITED STOCK)
-========================================== -->
+<!-- ===================================================== -->
+<!-- TIKET 1 : REGULAR - FESTIVAL SAE BERDUA (BUNDLE) -->
+<!-- ===================================================== -->
 
 <div class="ticket-card">
 
     <div class="ticket-header">
 
         <div class="ticket-title">
-            Regular : Festival<br>
+            Regular : Festival Sae Berdua
+            <br>
             (Limited Stock)
         </div>
 
@@ -579,23 +516,108 @@ REGULAR : FESTIVAL (LIMITED STOCK)
 
     </div>
 
+    <div class="label">
+
+        <i class="fa-solid fa-gift"></i>
+
+        Bundle
+
+    </div>
+
+    <div class="ticket-content">
+
+        <ul>
+
+            <li>Minimal pembelian <strong>2 tiket</strong> dalam satu transaksi.</li>
+
+            <li>Seluruh kategori merupakan <strong>Festival Standing</strong>.</li>
+
+            <li>Ibu hamil tidak disarankan memasuki area venue.</li>
+
+            <li>Minimal usia pengunjung adalah <strong>12 Tahun</strong>.</li>
+
+            <li>Tiket yang telah dibeli tidak dapat dipindahtangankan.</li>
+
+            <li>Promotor tidak bertanggung jawab atas pembelian tiket di luar partner resmi.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="ticket-footer">
+
+        <div>
+
+            <div class="price">
+                Rp184.500
+            </div>
+
+            <div class="old-price">
+                Rp199.000
+            </div>
+
+            <div class="discount">
+                Hemat 7%
+            </div>
+
+        </div>
+
+        <a href="form.html" class="choose-btn">
+
+            <i class="fa-solid fa-ticket"></i>
+
+            Pilih Tiket
+
+        </a>
+
+    </div>
+
+</div>
+<!-- ===================================================== -->
+<!-- TIKET 2 : REGULAR FESTIVAL -->
+<!-- ===================================================== -->
+
+<div class="ticket-card">
+
+    <div class="ticket-header">
+
+        <div class="ticket-title">
+            Regular : Festival
+            <br>
+            (Limited Stock)
+        </div>
+
+        <div class="sale">
+            On Sale
+        </div>
+
+    </div>
+
+    <div class="label">
+
+        <i class="fa-solid fa-ticket"></i>
+
+        Festival
+
+    </div>
+
     <div class="ticket-content">
 
         <ul>
 
             <li>Maksimal pembelian <strong>5 tiket</strong> dalam satu transaksi.</li>
 
-            <li>Seluruh kategori merupakan <strong>tiket berdiri (Festival Standing)</strong>.</li>
+            <li>Seluruh kategori merupakan <strong>Festival Standing</strong>.</li>
 
-            <li>Minimal usia pengunjung adalah <strong>12 tahun</strong>.</li>
+            <li>Minimal usia pengunjung adalah <strong>12 Tahun</strong>.</li>
 
             <li>Ibu hamil tidak disarankan memasuki area venue demi alasan keamanan.</li>
 
-            <li>Tiket yang telah dibeli tidak dapat dibatalkan maupun dipindah tangankan.</li>
+            <li>Tiket yang telah dibeli tidak dapat dibatalkan maupun dipindahtangankan.</li>
 
-            <li>Promotor tidak bertanggung jawab atas pembelian tiket selain melalui partner resmi.</li>
+            <li>Promotor tidak bertanggung jawab atas pembelian tiket di luar partner resmi.</li>
 
-            <li>Pengunjung wajib menjaga ketertiban dan mematuhi seluruh peraturan penyelenggara.</li>
+            <li>Seluruh pengunjung wajib menaati seluruh peraturan penyelenggara selama acara berlangsung.</li>
 
         </ul>
 
@@ -605,42 +627,43 @@ REGULAR : FESTIVAL (LIMITED STOCK)
 
         <div>
 
-            <div class="label">
-                <i class="fa-solid fa-ticket"></i>
-                Festival
+            <div class="price">
+                Rp199.000
             </div>
 
-            <div class="price-area">
-
-                <div class="price">
-                    Rp199.000
-                </div>
-
+            <div style="margin-top:10px;color:#666;font-size:15px;">
+                Tiket Festival Reguler
             </div>
 
         </div>
 
         <a href="form.html" class="choose-btn">
+
+            <i class="fa-solid fa-ticket"></i>
+
             Pilih Tiket
+
         </a>
 
     </div>
 
 </div>
-
-  <!-- ==========================================
-MERCHANDISE BLACK
-========================================== -->
+<!-- ===================================================== -->
+<!-- MERCHANDISE BLACK -->
+<!-- ===================================================== -->
 
 <div class="ticket-card">
 
     <div class="ticket-header">
 
         <div class="ticket-title">
-            Merchandise Only<br>
-            Official Merchandise<br>
-            Saemen Fest X Sirin Farid Stevy<br>
-            (Black)
+            Merchandise Only
+            <br>
+            Official Merchandise
+            <br>
+            Saemen Fest X Sirin Farid Stevy
+            <br>
+            Black Edition
         </div>
 
         <div class="sale">
@@ -649,108 +672,20 @@ MERCHANDISE BLACK
 
     </div>
 
-    <div class="ticket-content">
+    <div class="label">
 
-        <p><strong>Official Merchandise Saemen Fest 2026.</strong></p>
+        <i class="fa-solid fa-shirt"></i>
 
-        <br>
-
-        <ul>
-
-            <li>Harga merchandise <strong>belum termasuk tiket festival.</strong></li>
-
-            <li>Pengambilan merchandise dapat dilakukan pada tanggal
-            <strong>18–19 Juli 2026.</strong></li>
-
-            <li>Bagi pembeli luar kota, merchandise dapat dikirim melalui ekspedisi
-            (ongkir ditanggung pembeli).</li>
-
-            <li>Pengiriman dilakukan setelah masa Pre-Order selesai.</li>
-
-            <li>Pastikan ukuran yang dipilih sudah benar karena pesanan tidak dapat ditukar.</li>
-
-        </ul>
-
-        <br>
-
-        <strong>Pilihan Ukuran :</strong>
-
-        <br><br>
-
-        <div style="display:flex;flex-wrap:wrap;gap:10px;">
-
-            <span class="label">S (47 × 66)</span>
-
-            <span class="label">M (50 × 69)</span>
-
-            <span class="label">L (53 × 72)</span>
-
-            <span class="label">XL (56 × 74)</span>
-
-            <span class="label">XXL (59 × 76)</span>
-
-            <span class="label">XXXL (62 × 78)</span>
-
-        </div>
-
-    </div>
-
-    <div class="ticket-footer">
-
-        <div>
-
-            <div class="label">
-
-                <i class="fa-solid fa-shirt"></i>
-
-                Merchandise
-
-            </div>
-
-            <div class="price-area">
-
-                <div class="price">
-                    Rp175.000
-                </div>
-
-            </div>
-
-        </div>
-
-        <a href="form.html" class="choose-btn">
-
-            Pilih Merchandise
-
-        </a>
-
-    </div>
-
-</div>
-
-  <!-- ==========================================
-MERCHANDISE WHITE
-========================================== -->
-
-<div class="ticket-card">
-
-    <div class="ticket-header">
-
-        <div class="ticket-title">
-            Merchandise Only<br>
-            Official Merchandise<br>
-            Saemen Fest X Sirin Farid Stevy<br>
-            (White)
-        </div>
-
-        <div class="sale">
-            On Sale
-        </div>
+        Merchandise
 
     </div>
 
     <div class="ticket-content">
 
-        <p><strong>Official Merchandise Saemen Fest 2026.</strong></p>
+        <p>
+            Official Merchandise Saemen Fest 2026 hasil kolaborasi
+            bersama Sirin Farid Stevy.
+        </p>
 
         <br>
 
@@ -758,38 +693,38 @@ MERCHANDISE WHITE
 
             <li>Harga merchandise belum termasuk tiket festival.</li>
 
-            <li>Pengambilan merchandise pada tanggal
+            <li>Pengambilan merchandise tanggal
                 <strong>18–19 Juli 2026.</strong>
             </li>
 
             <li>Merchandise dapat dikirim melalui ekspedisi
                 (ongkir ditanggung pembeli).</li>
 
-            <li>Pengiriman dilakukan setelah masa Pre-Order selesai.</li>
+            <li>Pengiriman dilakukan setelah masa Pre Order selesai.</li>
 
-            <li>Pastikan ukuran yang dipilih sudah benar.</li>
+            <li>Pastikan ukuran yang dipilih sudah benar sebelum checkout.</li>
 
         </ul>
 
         <br>
 
-        <strong>Pilihan Ukuran :</strong>
+        <strong>Pilih Ukuran</strong>
 
         <br><br>
 
         <div style="display:flex;flex-wrap:wrap;gap:10px;">
 
-            <span class="label">S (47 × 66)</span>
+            <div class="label">S (47×66)</div>
 
-            <span class="label">M (50 × 69)</span>
+            <div class="label">M (50×69)</div>
 
-            <span class="label">L (53 × 72)</span>
+            <div class="label">L (53×72)</div>
 
-            <span class="label">XL (56 × 74)</span>
+            <div class="label">XL (56×74)</div>
 
-            <span class="label">XXL (59 × 76)</span>
+            <div class="label">XXL (59×76)</div>
 
-            <span class="label">XXXL (62 × 78)</span>
+            <div class="label">XXXL (62×78)</div>
 
         </div>
 
@@ -799,32 +734,140 @@ MERCHANDISE WHITE
 
         <div>
 
-            <div class="label">
-                <i class="fa-solid fa-shirt"></i>
-                Merchandise
+            <div class="price">
+                Rp175.000
             </div>
 
-            <div class="price-area">
-
-                <div class="price">
-                    Rp175.000
-                </div>
-
+            <div style="margin-top:10px;color:#666;">
+                Official Merchandise
             </div>
 
         </div>
 
         <a href="form.html" class="choose-btn">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
             Pilih Merchandise
+
         </a>
 
     </div>
 
 </div>
 
-<!-- ===============================
-BOTTOM STICKY
-=============================== -->
+ <!-- ===================================================== -->
+<!-- MERCHANDISE WHITE -->
+<!-- ===================================================== -->
+
+<div class="ticket-card">
+
+    <div class="ticket-header">
+
+        <div class="ticket-title">
+            Merchandise Only
+            <br>
+            Official Merchandise
+            <br>
+            Saemen Fest X Sirin Farid Stevy
+            <br>
+            White Edition
+        </div>
+
+        <div class="sale">
+            On Sale
+        </div>
+
+    </div>
+
+    <div class="label">
+
+        <i class="fa-solid fa-shirt"></i>
+
+        Merchandise
+
+    </div>
+
+    <div class="ticket-content">
+
+        <p>
+            Official Merchandise Saemen Fest 2026 hasil kolaborasi
+            bersama Sirin Farid Stevy.
+        </p>
+
+        <br>
+
+        <ul>
+
+            <li>Harga merchandise belum termasuk tiket festival.</li>
+
+            <li>Pengambilan merchandise tanggal
+                <strong>18–19 Juli 2026</strong>.
+            </li>
+
+            <li>Dapat dikirim ke seluruh Indonesia melalui ekspedisi.</li>
+
+            <li>Ongkos kirim ditanggung pembeli.</li>
+
+            <li>Pengiriman dilakukan setelah masa Pre Order selesai.</li>
+
+            <li>Pastikan ukuran sudah benar sebelum checkout.</li>
+
+        </ul>
+
+        <br>
+
+        <strong>Pilih Ukuran</strong>
+
+        <br><br>
+
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+
+            <div class="label">S (47×66)</div>
+
+            <div class="label">M (50×69)</div>
+
+            <div class="label">L (53×72)</div>
+
+            <div class="label">XL (56×74)</div>
+
+            <div class="label">XXL (59×76)</div>
+
+            <div class="label">XXXL (62×78)</div>
+
+        </div>
+
+    </div>
+
+    <div class="ticket-footer">
+
+        <div>
+
+            <div class="price">
+                Rp175.000
+            </div>
+
+            <div style="margin-top:10px;color:#666;">
+                Official Merchandise White
+            </div>
+
+        </div>
+
+        <a href="form.html" class="choose-btn">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            Pilih Merchandise
+
+        </a>
+
+    </div>
+
+</div>
+
+ <!-- ===================================================== -->
+<!-- STICKY BOTTOM -->
+<!-- ===================================================== -->
 
 <div class="bottom-buy">
 
@@ -832,47 +875,56 @@ BOTTOM STICKY
 
         <div class="bottom-price">
 
-            <h4>Harga Mulai dari</h4>
+            <div style="font-size:15px;color:#666;">
+                Harga Mulai dari
+            </div>
 
-            <h2>Rp175.000</h2>
+            <div style="font-size:32px;font-weight:800;">
+                Rp175.000
+            </div>
 
         </div>
 
-        <a href="form.html" class="buy-now">
+        <a href="form.html" class="choose-btn">
+
             <i class="fa-solid fa-ticket"></i>
+
             Beli Sekarang
+
         </a>
 
     </div>
 
 </div>
 
-<!-- ===============================
-FOOTER
-=============================== -->
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
 
-<footer style="background:#0d1f63;color:#fff;padding:40px 25px;margin-top:40px;">
+<footer style="background:#17349f;color:#fff;padding:45px 25px;margin-top:60px;">
 
     <img src="logo-saement.png"
          style="height:55px;margin-bottom:25px;">
 
-    <h3>Artatix</h3>
+    <h2 style="margin-bottom:20px;">
+        Artatix
+    </h2>
 
-    <br>
+    <div style="line-height:2;">
 
-    <p><strong>WhatsApp</strong></p>
+        <strong>WhatsApp</strong><br>
 
-    <p>+62 821-3767-6220</p>
+        +62 821-3767-6220
 
-    <br>
+        <br><br>
 
-    <p><strong>Email</strong></p>
+        <strong>Email</strong><br>
 
-    <p>cs@artatix.co.id</p>
+        cs@artatix.co.id
 
-    <br><br>
+    </div>
 
-    <hr style="border:none;border-top:1px solid rgba(255,255,255,.2);margin-bottom:20px;">
+    <hr style="margin:30px 0;border:none;border-top:1px solid rgba(255,255,255,.25);">
 
     <center>
 
@@ -884,6 +936,19 @@ FOOTER
 
 </div>
 
-</body>
+<script>
 
+document.querySelectorAll(".choose-btn").forEach(function(btn){
+
+    btn.addEventListener("click",function(){
+
+        this.style.opacity=".85";
+
+    });
+
+});
+
+</script>
+
+</body>
 </html>
